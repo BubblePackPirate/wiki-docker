@@ -8,31 +8,36 @@
 # ---------------------------------------------------------------------
 # Title of this site
 # ---------------------------------------------------------------------
+
 title: Wiki
 
 # ---------------------------------------------------------------------
 # Full public path to the site, without the trailing slash
 # ---------------------------------------------------------------------
 # INCLUDE CLIENT PORT IF NOT 80/443!
+
 host: http://localhost:8080
 
 # ---------------------------------------------------------------------
 # Port the main server should listen to (80 by default)
 # ---------------------------------------------------------------------
 # To use process.env.PORT, comment the line below:
+
 port: 8080
 
 # ---------------------------------------------------------------------
 # Data Directories
 # ---------------------------------------------------------------------
+
 paths:
-  repo: ./repo
-  data: ./data
+  repo: /var/wiki/persistent/repo
+  data: /var/wiki/persistent/data
 
 # ---------------------------------------------------------------------
 # Upload Limits
 # ---------------------------------------------------------------------
 # In megabytes (MB)
+
 uploads:
   maxImageFileSize: 3
   maxOtherFileSize: 100
@@ -98,7 +103,7 @@ auth:
 # ---------------------------------------------------------------------
 # Use a long and unique random string (256-bit keys are perfect!)
 
-sessionSecret: a89psdhf8ashf98pweh89fthw938hf9823hf89whv98h89whf98hw389fg23894th98gae98gh
+sessionSecret: 1234567890abcdefghj98huj89hf8e9wf9whaijklmnopqrstuvxyz
 
 # ---------------------------------------------------------------------
 # Database Connection String

@@ -4,6 +4,9 @@
 
 # Wiki.js Docker image
 
+>docker run -it -p 8080:3000 -v wiki_db:/data/db -v wiki_data:/var/wiki/persistent --name wiki wikitest:ubuntu 
+
+
 **DO NOT USE**
 *Still under development!*
 

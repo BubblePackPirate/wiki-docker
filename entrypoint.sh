@@ -1,12 +1,18 @@
 #!/bin/bash
-set -e
 
 echo "*************Starting MongoDB**********************"
-mkdir /data && mkdir /data/db
 mongod &
-echo "*************************Starting nodejs**************"
-node wiki configure
 
-echo "Something bad happened, I shouldnt be here! (db or something failed probably)"
+echo "*************************Starting nodejs**************"
+export PATH=/root/.nvm/versions/node/v9.2.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+if [ ! -e '/var/wiki/configure.done' ]; then
+echo "**********initial configuration not compelte, running now!***********"
+node wiki configure
+touch configure.done
+else
+node wiki start
+tail -f /dev/null
+fi
+
 echo "Now enjoy this lovely black hole (ctrl-c to kill)"
 tail -f /dev/null

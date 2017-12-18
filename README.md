@@ -10,9 +10,9 @@
 The first run of the container will run `node wiki configure`which will run through first setup items. Pay close attention to the port you're exposing and the hostname you set in the setup.  Assuming you mapped your volumes correctly, future startups will just run the normal `node wiki start`
 
 
+## Pre-bundled: 
+* MongoDB
+* local Git
 
+#### Recommend splitting these out for large scale deployments! Just point to them in either your initial config or the `/var/wiki/config.yml`
 
-**DO NOT USE**
-*Still under development!*
-
-In the meantime, you should install Wiki.js manually by following the [Get Started](https://wiki.requarks.io/get-started.html) guide.

@@ -7,10 +7,7 @@
 >docker run -itd -p 8080:3000 -v wikijs_db:/data/db -v wikijs_data:/var/wiki/persistent --name wiki bubblepackpirate/wikijs:latest
 
 
-The first run of the container will run 
-> node wiki configure 
-which will run through first setup items. Pay close attention to the port you're exposing and the hostname you set in the setup.  Assuming you mapped your volumes correctly, future startups will just run the normal 
-> node wiki start
+The first run of the container will run `node wiki configure`which will run through first setup items. Pay close attention to the port you're exposing and the hostname you set in the setup.  Assuming you mapped your volumes correctly, future startups will just run the normal `node wiki start`
 
 
 

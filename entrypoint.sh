@@ -14,5 +14,5 @@ node wiki start
 tail -f /dev/null
 fi
 
-echo "Now enjoy this lovely black hole (ctrl-c to kill)"
+echo "~!~!~!~!~! Something bad happened !~!~!~!~! Enter the container and troubleshoot"
 tail -f /dev/null
